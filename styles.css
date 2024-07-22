@@ -1,0 +1,359 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+  
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+    
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #FFC300;
+}
+
+.section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.home-section, .about-section, .services-section, .projects-section, .contact-section {
+    background: linear-gradient(to right, #FF5733, #FFC300);
+    color: white;
+    padding-bottom: 200px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-photo, .about-photo {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 1.5rem;
+}
+
+.project-photo {
+    width: 250px;
+    height: 170px;
+    border-radius: 5%;
+    border: 5px solid white;
+    margin-bottom: 1.5rem;
+}
+
+.highlight {
+    color: #fee840;
+}
+
+.btn {
+    background-color: #FF5733;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #C70039;
+}
+
+.about-section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.about-content p {
+    flex: 1;
+    margin-right: 2rem;
+    animation: slideInLeft 1s ease-in-out;
+    text-align: left;
+    
+}
+
+.about-photo {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 10px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+
+
+
+.aboutSection{
+    background: linear-gradient(to right, #FF5733, #FFC300); /* Gradient for About Me */
+    margin-bottom: 0;
+}
+
+.about-section {
+    background: linear-gradient(to right, #FF5733, #FFC300); /* Gradient for About Me */
+    color: white;
+    padding: 1rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.skills-section {
+    padding-top: 0;
+    padding-left: 180px;
+    margin-top: 1rem;
+    text-align: left;
+    padding-bottom: 100px;
+    
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 0px;
+    gap: 1.5rem;
+}
+
+.skill-card {
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+
+
+.progress-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    position: relative;
+    background: conic-gradient(
+        #3344ff 0%,
+        #61bffe var(--percentage),
+        #ddd var(--percentage),
+        #ddd 100%
+    );
+    color: #333;
+}
+
+.progress-circle:before {
+    content: attr(data-percentage) '%';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+}
+
+.html-circle {
+    --percentage: 90%;
+}
+
+.css-circle {
+    --percentage: 85%;
+}
+
+.js-circle {
+    --percentage: 75%;
+}
+
+.php-circle {
+    --percentage: 60%;
+}
+
+
+
+
+
+
+.projects-section {
+    padding: 4rem 0 10rem 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.services-section {
+    padding: 10rem 0 10rem 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+
+.services-list, .projects-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service, .project {
+    background-color: #333;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 300px;
+    flex: 1;
+    text-align: center;
+    animation: zoomIn 1s ease-in-out;
+}
+
+.service h3, .project h3 {
+    color: #FFC300;
+}
+
+.contact-section {
+    padding: 4rem 0 2rem 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section form label {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.contact-section form input, .contact-section form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section form button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #C70039;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-section form button:hover {
+    background-color: #900C3F;
+}
+
+.ContactMe{
+    padding-left: 100px;
+    padding-bottom: 10px;
+
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
